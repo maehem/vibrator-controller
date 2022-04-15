@@ -2892,6 +2892,17 @@ Tayda: A-4780</description>
 <text x="94.996" y="136.652" size="1.27" layer="97">GPIO #4</text>
 <text x="93.726" y="123.698" size="1.27" layer="97">GPIO #26</text>
 <text x="93.726" y="126.238" size="1.27" layer="97">GPIO #25</text>
+<text x="55.88" y="185.42" size="5.08" layer="97">TODO:
+- P-FET needs 1N7002 on gate to work properly.
+- Caps accross motor load
+- Bulk cap for motor power. 47 -100uF
+- Power switch up/down reversed.
+- Measure motor draw when turned off.
+- Fuse on BAT out.
+- Fuse on sensor power.
+- Mode up/down buttons are swapped
+- Vibe connector TRS jack holes are enormous. Slim them down.
+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -4237,6 +4248,10 @@ Tayda: A-4780</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
